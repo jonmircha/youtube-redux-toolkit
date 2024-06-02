@@ -27,7 +27,7 @@ const ProductsList = () => {
 
   const handleCreateProduct = () => {
     if (newProductName) {
-      const newProduct = { id: Date.now(), name: newProductName };
+      const newProduct = { id: `${Date.now()}`, name: newProductName };
       dispatch(createProduct(newProduct));
 
       axios
